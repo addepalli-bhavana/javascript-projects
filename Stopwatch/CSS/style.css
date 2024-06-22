@@ -1,0 +1,96 @@
+/* importing poppins font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* css variables */
+:root {
+  --ff-primary: "Poppins", sans-serif;
+  --clr-blue: #282c35;
+  --clr-white:  #ffa7c4;
+  --transition: all 0.5s;
+  --bdr-radius: 5px;
+}
+
+/* body */
+body {
+  background-color: var(--clr-blue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--clr-blue);
+  font-size: 50px;
+  letter-spacing: 0.0313rem;
+  font-weight: 600;
+  font-family: var(--ff-primary);
+  text-align: center;
+}
+
+/* global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* stopwatch section */
+.stopwatch {
+  background: var(--clr-white);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: var(--bdr-radius);
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* stopwatch center */
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.time span {
+  width: 25%;
+}
+.btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: var(--clr-blue);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: inherit;
+  font-family: inherit;
+  font-size: 18px;
+  color: var(--clr-white);
+  width: 32%;
+  height: 50px;
+  border-radius: var(--bdr-radius);
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 35px;
+  }
+  .btn {
+    font-size: 16px;
+    height: 45px;
+  }
+  .btns {
+    margin-bottom: 10px;
+  }
+}
+
+.disable {
+  opacity: 0.3;
+  pointer-events: none;
+}

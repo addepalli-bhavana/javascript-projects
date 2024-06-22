@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <!-- meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link to font awesome library for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link to the external stylesheet -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- title of the page -->
+    <title>Quote Generator</title>
+  </head>
+  <!-- body -->
+  <body>
+    <!-- quote generator section -->
+    <section class="quote-generator" id="quote-generator">
+      <!-- quote generator center -->
+      <div class="quote-generator-center">
+        <blockquote id="quote" class="quote"></blockquote>
+        <cite class="quote-author" id="quote-author"></cite>
+        <div class="btns">
+          <a target="_blank" class="twitter-btn btn" id="twitter-btn"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <button type="button" class="new-quote-btn btn" id="new-quote-btn">
+            new quote
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- link to external javascript file -->
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

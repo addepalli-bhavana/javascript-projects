@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <!-- meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link to the external stylesheet -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- title of the page -->
+    <title>Weather App</title>
+  </head>
+  <!-- body -->
+  <body>
+    <!-- weather section -->
+    <section class="weather">
+      <!-- weather title -->
+      <div class="weather-title">
+        <h1>weather finder</h1>
+      </div>
+      <!-- weather center -->
+      <div class="weather-center">
+        <form>
+          <input type="text" placeholder="Enter city name" id="input-text" />
+          <button type="button" class="get-btn" id="get-btn">
+            get weather
+          </button>
+        </form>
+        <div class="weather-info hide" id="weather-info">
+          <img alt="weather icon" class="weather-icon" id="weather-icon" />
+          <span id="temperature" class="temperature"></span>
+          <span id="description"></span>
+          <span id="feel"></span>
+          <span id="humidity"></span>
+          <span id="wind-speed"></span>
+        </div>
+      </div>
+    </section>
+    <!-- link to external javascript file -->
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

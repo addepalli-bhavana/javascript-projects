@@ -1,0 +1,64 @@
+/* css variables */
+:root {
+  --bdr-radius: .3125rem;
+  --clr-blue: #2e94e3;
+  --clr-white: #fff;
+}
+
+/* body */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #10101e;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--clr-white);
+  font-size: 2.5rem;
+  letter-spacing: .0313rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* digital clock section */
+.digital-clock {
+  border: .1875rem solid var(--clr-blue);
+  border-radius: var(--bdr-radius);
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 43.75rem;
+  padding: 1.25rem;
+  -webkit-box-reflect: below .0625rem
+    linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+.digital-clock:hover {
+  background-color: var(--clr-blue);
+  box-shadow: 0 0 1.875rem var(--clr-blue);
+}
+
+/* digital clock center */
+.date {
+  text-transform: capitalize;
+  padding-bottom: 1.25rem;
+  border-bottom: .1875rem solid var(--clr-blue);
+}
+.time {
+  padding-top: 1.25rem;
+}
+
+/* media queries */
+@media screen and (max-width: 48rem) {
+  body {
+    font-size: 1.875rem;
+  }
+}

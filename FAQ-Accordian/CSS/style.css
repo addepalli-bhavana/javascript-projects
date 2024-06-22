@@ -1,0 +1,136 @@
+/* importing poppins font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* css variables */
+:root {
+  --ff-primary: "Poppins", sans-serif;
+  --bdr-radius: .3125rem;
+  --clr-grey: #333;
+  --clr-white: #e1e5e8;
+}
+
+/* body */
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--clr-grey);
+  font-size: 1.125rem;
+  letter-spacing: .0313rem;
+}
+
+/* global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* faq section */
+.faq {
+  border-radius: var(--bdr-radius);
+  background-color: var(--clr-grey);
+  padding: 1.25rem;
+  width: 90vw;
+  margin: 1.875rem auto;
+  max-width: 62.5rem;
+}
+
+/* faq title */
+.faq-title h1 {
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+/* faq center */
+.question {
+  background: var(--clr-white);
+  border-radius: var(--bdr-radius);
+  margin-bottom: 1.25rem;
+}
+.question:last-child {
+  margin-bottom: .3125rem;
+}
+.question-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.375rem;
+  padding: 0 .9375rem;
+}
+.question-text p {
+  font-weight: 600;
+}
+.plus-btn,
+.minus-btn {
+  background-color: var(--clr-grey);
+  height: 2.1875rem;
+  width: 2.1875rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn i,
+.plus-btn i {
+  font-size: 1.125rem;
+  color: var(--clr-white);
+}
+.minus-btn {
+  display: none;
+}
+.answer-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 .9375rem;
+  overflow: hidden;
+  height: 0rem;
+  border-top: none;
+  transition: height 0.5s;
+}
+.answer-text p {
+  line-height: 1.8;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.show .answer-text {
+  height: 7.1875rem;
+  border-top: .0625rem solid #999;
+}
+.show .answer-text p {
+  opacity: 1;
+}
+.show .minus-btn {
+  display: inline;
+}
+.show .plus-btn {
+  display: none;
+}
+@media screen and (max-width: 48rem) {
+  body {
+    font-size: 1rem;
+  }
+  .faq-title h1 {
+    font-size: 1.25rem;
+  }
+  .minus-btn i,
+  .plus-btn i {
+    font-size: 1rem;
+  }
+  .show .answer-text {
+    height: 8.75rem;
+  }
+  button {
+    height: 1.875rem;
+    width: 1.875rem;
+  }
+}

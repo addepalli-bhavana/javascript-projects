@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <!-- meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link to the external stylesheet -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- title of the page -->
+    <title>Text To Speech Convertor</title>
+  </head>
+  <!-- body -->
+  <body>
+    <!-- convertor section -->
+    <section class="convertor">
+      <!-- convertor title -->
+      <div class="convertor-title">
+        <h1>text to speech convertor</h1>
+      </div>
+      <!-- convertor center -->
+      <div class="convertor-center">
+        <form>
+          <div>
+            <label>enter text:</label>
+            <textarea id="input-text"></textarea>
+          </div>
+          <div>
+            <label>select voice:</label>
+            <select id="input-voice"></select>
+          </div>
+          <div class="btns">
+            <button type="button" id="convert-btn" class="convert-btn btn">
+              convert to speech
+            </button>
+            <button type="reset" id="reset-btn" class="reset-btn btn">reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Link to external JavaScript file -->
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

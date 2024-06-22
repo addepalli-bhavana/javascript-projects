@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <!-- meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link to font awesome library for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link to the external stylesheet -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- title of the page -->
+    <title>Todo App</title>
+  </head>
+  <!-- body -->
+  <body>
+    <!-- todo section -->
+    <section class="todo">
+      <!-- todo title -->
+      <div class="todo-title">
+        <h1>todo</h1>
+      </div>
+      <!-- todo center -->
+      <div class="todo-center">
+        <form>
+          <span><i class="fa-solid fa-pen"></i></span>
+          <input
+            type="text"
+            class="input-todo"
+            id="input-todo"
+            placeholder="Add a new todo"
+          />
+          <button type="button" class="add-todo-btn" id="add-todo-btn">
+            +
+          </button>
+          <button type="button" id="save-todo-btn" class="save-todo-btn hide">
+            <i class="fa-solid fa-floppy-disk"></i>
+          </button>
+        </form>
+
+        <div class="btns-container">
+          <button
+            type="button"
+            class="pending-btn btn highlight-btn"
+            id="pending-btn"
+          >
+            pending
+          </button>
+          <button type="button" class="completed-btn btn" id="completed-btn">
+            completed
+          </button>
+        </div>
+
+        <div id="pending-todos">
+          <ul class="todos-list" id="pending-todos-list"></ul>
+          <button type="button" class="clear-all-btn" id="pending-clear-btn">
+            clear all
+          </button>
+        </div>
+
+        <div class="hide" id="completed-todos">
+          <ul class="todos-list" id="completed-todos-list"></ul>
+          <button type="button" class="clear-all-btn" id="completed-clear-btn">
+            clear all
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- link to external javascript file -->
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
